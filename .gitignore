@@ -13,7 +13,6 @@ lib-cov
 *.gz
 
 # no compiled JS
-src/**/*.js
 prisma/**/*.js
 
 pids
