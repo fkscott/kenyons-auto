@@ -4,9 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.ts",
-    "build": "npm run tailwind:css",
-    "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css",
+    "dev": " nodemon -e ts,hbs server.ts",
+    "build": "npm run tailwind:build",
+    "tailwind:dev": "postcss public/styles/tailwind.css -o public/styles/style.css --watch",
+    "tailwind:build": "postcss public/styles/tailwind.css -o public/styles/style.css",
     "start": "ts-node server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
