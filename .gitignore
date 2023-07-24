@@ -11,7 +11,10 @@ lib-cov
 *.out
 *.pid
 *.gz
-**/*.js
+
+# no compiled JS
+src/**/*.js
+prisma/**/*.js
 
 pids
 logs
